@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-RUN yum update && yum install -y krb-workstation && \
+RUN yum update -y && yum install -y krb-workstation && \
     mkdir /krb5 && chmod 755 /krb5
 
 ADD rekinit.sh /
